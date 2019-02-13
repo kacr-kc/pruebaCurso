@@ -1,0 +1,16 @@
+git init... marca el inicio de nuesto proyecto
+git status... nos dice el estado de nuestro proyecto
+git add ... es para agregar
+git add -A ... es para agregar todos
+git commit -m "Mensaje" ... Sirve para guardarlos, entre comillas poner un mensaje muy especifico
+git log ... nos va a dar todos los commit y el mensaje
+git checkout "código"... viajamos en el tiempo
+git checkout master ... mueve al último.
+git reset ... algo parecido en git chekout pero este elimina los commit
+git reset --soft 
+git reset --mixed no borra el staging area ni el working area
+git reset --hard borra todo, el código todo
+git log > commits.txt ... guarda toda la información
+git help ... nos dará la información
+git help status
+git help add
