@@ -14,3 +14,17 @@ git log > commits.txt ... guarda toda la información
 git help ... nos dará la información
 git help status
 git help add
+
+RAMAS Y FUSIONES (Si funcionó)
+git branch -- nos muestra las ramas
+git branch Test -- crea 
+git branch -D ... Borra todas las ramas si no la estamos usando
+git checkout ... se mueve de master a test, colores o a otra rama.
+git branch -b Text ... crea rama y se mueve a esa rama	
+
+Fusiones: juntar ramas se pone en el master y fusiona con el comando git merge Test
+
+GITHUB
+git clone "https://ejemplo.com"... de git pasar proyecto de github a nuestra computadora
+git remote... vincula nuestro proyecto local con nuestro proyecto remoto
+(Ejemplo) git remote add origin https://github.com/kacr-kc/pruebaCurso.git
