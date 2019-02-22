@@ -6,6 +6,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Obtiene datos</title>
 </head>
+
+<style>
+	
+	h2{
+		text-align: center;
+		background-color: #F96;
+		width: 25%;
+		margin: auto;
+	} 
+	section{
+		text-align: center;
+		background-color: #F96;
+		width: 25%;
+		margin: auto;
+		border: 2px #F30 dashed;
+	}
+</style>
 <body>
 	
 	<jsp:useBean id="mybean" scope="session" class="org.mypackage.hello.datosEstudiante" />
@@ -14,11 +31,15 @@
 	<jsp:setProperty name="mybean" property="agno" />
 	<jsp:setProperty name="mybean" property="semestre" />
 	
+	<h2>Hola, <jsp:getProperty name="mybean" property="nombre" />!</h2>
+	<section>
 	
- 	<h1>Hola, <jsp:getProperty name="mybean" property="nombre" />!</h1>
  	<p>Edad, <jsp:getProperty name="mybean" property="fecha" /></p>
  	<p>Año, <jsp:getProperty name="mybean" property="agno" /></p>
  	<p>Semestre, <jsp:getProperty name="mybean" property="semestre" /></p>
+	
+	</section>
+ 	
  	
 	
 </body>

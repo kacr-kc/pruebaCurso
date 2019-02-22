@@ -3,12 +3,35 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Formulario Estudiante</title>
+
+<style>
+
+	h1{
+	text-align: center;
+	background-color: #F96;
+	width: 25%;
+	margin: auto;
+	}
+	table{
+		text-align: center;
+		background-color: #F96;
+		width: 25%;
+		margin: auto;
+		border: 2px #F30 dashed;
+	}
+	td{
+		padding: 15px;
+	}
+
+</style>
+
 </head>
 <body>
 
-	<p>Formulario datos del estudiante</p>
 	
-	<form name="Datos" action="response.jsp">
+	<h1>Formulario datos del estudiante</h1>
+	
+	<!-- <form name="Datos" action="response.jsp">
 	
 	Nombre: <input type="text" name="nombre" /><br><br>
 	Fecha de cumpleaños: <input type="text" name="fecha" /><br><br>
@@ -16,7 +39,35 @@
 	Semestre de ingreso: <input type="text" name="semestre"/><br><br>
 	
 	<input type="submit" value="OK">	
+	</form> -->
+	
+	<section>
+	<form name="Datos" action="response.jsp">
+		
+		<table>
+		<tr>
+			<td>Nombre:</td>
+			<td><input type="text" name="nombre" /></td>		
+		</tr>
+		<tr>
+			<td>Fecha de cumpleaños:</td>
+			<td><input type="text" name="fecha" placeholder="dd/mm/yyyy"/></td>
+		</tr>
+		<tr>
+			<td>Año de ingreso a la Universidad:</td>
+			<td><input type="text" name="agno" /></td>
+		</tr>
+		<tr>
+			<td>Semestre de ingreso:</td>
+			<td><input type="text" name="semestre"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="OK"></td>
+		</tr>
+	</table>
 	</form>
-
+	</section>
+	
 </body>
 </html>
